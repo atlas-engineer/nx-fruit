@@ -7,13 +7,6 @@
 
 (in-package :nx-fruit)
 
-(define-command-global fruit-of-the-day ()
-  "Echo the fruit of the day!"
-  (let* ((current-time (local-time:now))
-         (current-day-as-string (aref local-time:+day-names+ (local-time:timestamp-day-of-week current-time)))
-         (current-fruit (nth (mod (local-time:day-of current-time) (length list-of-fruits)) list-of-fruits)))
-    (echo "Have a wonderful ~a ~a!" current-fruit current-day-as-string)))
-
 (defparameter list-of-fruits 
   (list "Abiu"
         "Açaí"
@@ -155,3 +148,10 @@
         "Squash"
         "Tomato"
         "Zucchini"))
+
+(define-command-global fruit-of-the-day ()
+  "Echo the fruit of the day!"
+  (let* ((current-time (local-time:now))
+         (current-day-as-string (aref local-time:+day-names+ (local-time:timestamp-day-of-week current-time)))
+         (current-fruit (nth (mod (local-time:day-of current-time) (length list-of-fruits)) list-of-fruits)))
+    (echo "Have a wonderful ~a ~a!" current-fruit current-day-as-string)))
