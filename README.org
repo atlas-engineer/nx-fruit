@@ -3,7 +3,7 @@
 The fruit of the day has a long and storied history within the Nyxt
 community. This package formalizes this grand tradition into a module
 which can alert you to the fruit of the day. Simply execute
-`fruit-of-the-day` to be presented with a wonderful message about the
+=fruit-of-the-day= to be presented with a wonderful message about the
 fruit we are celebrating!
 
 #+begin_quote
