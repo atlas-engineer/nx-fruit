@@ -1,4 +1,5 @@
 * nx-fruit: Fruit of the day for Nyxt
+
 The fruit of the day has a long and storied history within the Nyxt
 community. This package formalizes this grand tradition into a module
 which can alert you to the fruit of the day. Simply execute
@@ -13,3 +14,20 @@ having divided it, Persephone ate seven of the pomegranate seeds.
 
 - The Golden Fleece
 #+end_quote
+
+* Installation
+
+Git-clone the repository to your Nyxt extension directory. This
+directory is typically located at =~/.local/share/nyxt/extensions=
+
+After you've added nx-fruit to a place that Nyxt can find it, it is
+necessary to load it in your init file. To do this, it suffices to add
+the following:
+
+#+NAME: add nx-fruit to init
+#+BEGIN_SRC lisp
+  (asdf:load-system :nx-fruit)
+#+END_SRC
+
+Now, upon starting Nyxt, the glory of the fruit of the day shall be yours!
+
