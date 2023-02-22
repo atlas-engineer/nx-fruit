@@ -1,13 +1,16 @@
 ;;;; SPDX-FileCopyrightText: Atlas Engineer LLC
 ;;;; SPDX-License-Identifier: BSD-3-Clause
 
+#+nyxt-3
+(nyxt:define-package :nx-fruit)
+#+nyxt-2
 (uiop:define-package :nx-fruit
   (:use :cl)
   (:import-from :nyxt :echo :define-command-global))
 
 (in-package :nx-fruit)
 
-(defparameter list-of-fruits 
+(defparameter list-of-fruits
   (list "Abiu"
         "Açaí"
         "Acerola"
