@@ -19,6 +19,9 @@ having divided it, Persephone ate seven of the pomegranate seeds.
 
 Git-clone the repository to your Nyxt extension directory. This
 directory is typically located at =~/.local/share/nyxt/extensions=
+#+begin_src sh
+  git clone https://github.com/atlas-engineer/nx-fruit ~/.local/share/nyxt/extensions/nx-fruit
+#+end_src
 
 After you've added nx-fruit to a place that Nyxt can find it, it is
 necessary to load it in your init file. To do this, it suffices to add
@@ -26,7 +29,13 @@ the following:
 
 #+NAME: add nx-fruit to init
 #+BEGIN_SRC lisp
+  ,#+nyxt-2
   (asdf:load-system :nx-fruit)
+  ,#+nyxt-3
+  (nyxt:define-nyxt-user-system-and-load "nyxt-user/nx-fruit-proxy"
+    :description "This proxy system saves us if nx-fruit fails to load.
+  Otherwise it will break all the config loading."
+    :depends-on ("nx-fruit"))
 #+END_SRC
 
 Now, upon starting Nyxt, the glory of the fruit of the day shall be yours!
