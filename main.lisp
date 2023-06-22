@@ -1,7 +1,7 @@
 ;;;; SPDX-FileCopyrightText: Atlas Engineer LLC
 ;;;; SPDX-License-Identifier: BSD-3-Clause
 
-#+nyxt-3
+#+(or nyxt-3 nyxt-4)
 (nyxt:define-package :nx-fruit)
 #+nyxt-2
 (uiop:define-package :nx-fruit
