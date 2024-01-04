@@ -1,3 +1,13 @@
+#+TITLE: nx-fruit
+#+PRICE: 1
+#+DOWNLOAD: https://github.com/atlas-engineer/nx-fruit
+#+SUPPORT-EMAIL hello@atlas.engineer
+#+WEBSITE nyxt-browser.com
+#+HELP https://discourse.atlas.engineer/
+#+FAQ https://nyxt-browser.com/faq
+#+REPORTS https://github.com/atlas-engineer/nx-fruit/issues
+#+CONTRIBUTING https://github.com/atlas-engineer/nx-fruit
+
 * nx-fruit: Fruit of the day for Nyxt
 
 The fruit of the day has a long and storied history within the Nyxt
